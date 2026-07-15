@@ -1,5 +1,7 @@
 import { Container } from "@/components/layout/container";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { serviceAreas } from "@/content/service-areas";
 import { siteConfig } from "@/content/site";
 import { createMetadata } from "@/lib/seo";
 
@@ -24,12 +26,11 @@ export default function HomePage() {
 
       <section className="section bg-[var(--color-surface-white)]" id="area-layanan">
         <Container className="max-w-3xl">
-          <h2 className="text-4xl sm:text-5xl">Area layanan</h2>
-          <p className="mt-4 max-w-xl text-[var(--color-text-secondary)]">Lely Cake melayani pemesanan untuk wilayah berikut.</p>
+          <SectionHeading description="Lely Cake melayani pemesanan untuk wilayah berikut." title="Area layanan" />
           <ul className="mt-6 flex flex-wrap gap-3" aria-label="Area layanan Lely Cake">
-            {siteConfig.serviceAreas.map((area) => (
-              <li className="rounded-[var(--radius-sm)] border border-[var(--color-border-soft)] px-4 py-2 text-base text-[var(--color-text-primary)]" key={area}>
-                {area}
+            {serviceAreas.map((area) => (
+              <li className="rounded-[var(--radius-sm)] border border-[var(--color-border-soft)] px-4 py-2 text-base text-[var(--color-text-primary)]" key={area.slug}>
+                {area.name}
               </li>
             ))}
           </ul>
