@@ -22,8 +22,15 @@ export type Package = {
   suitableFor: string[];
   contents: string[];
   priceFrom?: number;
+  priceLabel?: string;
   minimumOrder?: string;
-  image: string;
+  image?: string;
+  imageAlt?: string;
+  tagline?: string;
+  capacity?: string;
+  badge?: string;
+  featuredLayout?: boolean;
+  productSlugs?: string[];
   featured?: boolean;
   available: boolean;
 };
@@ -53,6 +60,7 @@ export type SiteConfig = {
     linkNumber: string;
   };
   instagramUrl: string;
+  googleMapsAddress: string;
   address: string;
   businessHours: string;
   siteUrl: string;

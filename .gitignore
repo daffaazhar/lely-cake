@@ -13,5 +13,7 @@
 !.env.example
 
 # local files
+.agents/
+skills-*.json
 *.tsbuildinfo
 .DS_Store

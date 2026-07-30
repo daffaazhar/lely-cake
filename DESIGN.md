@@ -66,17 +66,17 @@ Aturan:
 
 ### 3.1 Warna Utama
 
-| Token | Warna | Hex | Penggunaan |
-|---|---|---:|---|
-| `brand-brown` | Cokelat utama | `#4B2E1A` | Judul, teks penting, footer, tombol utama |
-| `brand-gold` | Emas hangat | `#C49A4A` | Aksen, garis dekoratif, ikon, status aktif |
-| `brand-cream` | Krem lembut | `#F7F3EA` | Latar utama, kartu, bidang visual |
-| `surface-white` | Putih hangat | `#FFFDF9` | Latar konten dan kartu |
-| `text-primary` | Cokelat sangat gelap | `#2A1A10` | Teks isi utama |
-| `text-secondary` | Cokelat abu | `#6F625A` | Teks pendukung |
-| `border-soft` | Garis lembut | `#E5D9C8` | Batas kartu dan form |
-| `success` | Hijau lembut | `#4F6B4F` | Konfirmasi berhasil |
-| `error` | Merah hangat | `#9A3F32` | Validasi dan pesan kesalahan |
+| Token            | Warna                |       Hex | Penggunaan                                 |
+| ---------------- | -------------------- | --------: | ------------------------------------------ |
+| `brand-brown`    | Cokelat utama        | `#4B2E1A` | Judul, teks penting, footer, tombol utama  |
+| `brand-gold`     | Emas hangat          | `#C49A4A` | Aksen, garis dekoratif, ikon, status aktif |
+| `brand-cream`    | Krem lembut          | `#F7F3EA` | Latar utama, kartu, bidang visual          |
+| `surface-white`  | Putih hangat         | `#FFFDF9` | Latar konten dan kartu                     |
+| `text-primary`   | Cokelat sangat gelap | `#2A1A10` | Teks isi utama                             |
+| `text-secondary` | Cokelat abu          | `#6F625A` | Teks pendukung                             |
+| `border-soft`    | Garis lembut         | `#E5D9C8` | Batas kartu dan form                       |
+| `success`        | Hijau lembut         | `#4F6B4F` | Konfirmasi berhasil                        |
+| `error`          | Merah hangat         | `#9A3F32` | Validasi dan pesan kesalahan               |
 
 ### 3.2 Proporsi Penggunaan
 
@@ -126,16 +126,16 @@ Alternatif:
 
 ### 4.3 Skala Tipografi
 
-| Elemen | Desktop | Seluler | Catatan |
-|---|---:|---:|---|
-| H1 | 56–64 px | 38–44 px | Maksimal 2–3 baris |
-| H2 | 40–48 px | 32–36 px | Judul bagian |
-| H3 | 28–32 px | 24–28 px | Judul kartu/kelompok |
-| Judul produk | 22–26 px | 20–24 px | Ringkas |
-| Isi besar | 18–20 px | 17–18 px | Intro dan sorotan |
-| Isi normal | 16–18 px | 16 px | Paragraf |
-| Teks kecil | 14 px | 14 px | Label dan catatan |
-| Tombol | 15–16 px | 15–16 px | Semibold |
+| Elemen       |  Desktop |  Seluler | Catatan              |
+| ------------ | -------: | -------: | -------------------- |
+| H1           | 56–64 px | 38–44 px | Maksimal 2–3 baris   |
+| H2           | 40–48 px | 32–36 px | Judul bagian         |
+| H3           | 28–32 px | 24–28 px | Judul kartu/kelompok |
+| Judul produk | 22–26 px | 20–24 px | Ringkas              |
+| Isi besar    | 18–20 px | 17–18 px | Intro dan sorotan    |
+| Isi normal   | 16–18 px |    16 px | Paragraf             |
+| Teks kecil   |    14 px |    14 px | Label dan catatan    |
+| Tombol       | 15–16 px | 15–16 px | Semibold             |
 
 ### 4.4 Panjang Baris
 
@@ -504,16 +504,19 @@ Hindari menggandakan teks yang sama pada setiap kota. Setiap halaman harus memil
 ### 9.1 Tombol
 
 **Utama**
+
 - Latar: cokelat.
 - Teks: putih hangat.
 - Contoh: **Pesan lewat WhatsApp**.
 
 **Sekunder**
+
 - Latar: transparan atau krem.
 - Garis: cokelat.
 - Contoh: **Lihat Produk**.
 
 **Teks**
+
 - Tanpa bidang.
 - Gunakan untuk tautan ringan.
 - Contoh: **Pelajari Selengkapnya**.
@@ -753,15 +756,15 @@ Jangan hanya mengukur jumlah pengunjung. Fokus pada tindakan yang mengarah ke pe
 
 ```css
 :root {
-  --color-brand-brown: #4B2E1A;
-  --color-brand-gold: #C49A4A;
-  --color-brand-cream: #F7F3EA;
-  --color-surface-white: #FFFDF9;
-  --color-text-primary: #2A1A10;
-  --color-text-secondary: #6F625A;
-  --color-border-soft: #E5D9C8;
-  --color-success: #4F6B4F;
-  --color-error: #9A3F32;
+  --color-brand-brown: #4b2e1a;
+  --color-brand-gold: #c49a4a;
+  --color-brand-cream: #f7f3ea;
+  --color-surface-white: #fffdf9;
+  --color-text-primary: #2a1a10;
+  --color-text-secondary: #6f625a;
+  --color-border-soft: #e5d9c8;
+  --color-success: #4f6b4f;
+  --color-error: #9a3f32;
 
   --font-heading: "Cormorant Garamond", Georgia, serif;
   --font-body: "Plus Jakarta Sans", Arial, sans-serif;

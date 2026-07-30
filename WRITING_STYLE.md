@@ -130,23 +130,23 @@ Tagline resmi berbahasa Inggris hanya tampil sebagai bagian dari aset logo. Di d
 
 Gunakan kata sehari-hari yang sopan.
 
-| Gunakan | Hindari |
-|---|---|
-| pesan | order |
-| keranjang pilihan | wishlist |
-| lihat produk | eksplor produk |
-| harga mulai | starting from |
-| pilihan rasa | varian flavor |
-| kirim | delivery |
-| formulir | form |
-| penawaran | quotation |
-| pelanggan | customer |
-| acara | event |
-| tersedia | available |
-| hubungi kami | contact us |
-| selengkapnya | learn more |
-| dibuat segar | freshly made |
-| pertanyaan umum | FAQ, bila berdiri sendiri |
+| Gunakan           | Hindari                   |
+| ----------------- | ------------------------- |
+| pesan             | order                     |
+| keranjang pilihan | wishlist                  |
+| lihat produk      | eksplor produk            |
+| harga mulai       | starting from             |
+| pilihan rasa      | varian flavor             |
+| kirim             | delivery                  |
+| formulir          | form                      |
+| penawaran         | quotation                 |
+| pelanggan         | customer                  |
+| acara             | event                     |
+| tersedia          | available                 |
+| hubungi kami      | contact us                |
+| selengkapnya      | learn more                |
+| dibuat segar      | freshly made              |
+| pertanyaan umum   | FAQ, bila berdiri sendiri |
 
 Istilah yang sudah sangat umum boleh dipakai bila lebih mudah dipahami, misalnya WhatsApp, Instagram, dan Google Maps.
 
@@ -273,17 +273,17 @@ Gunakan kapitalisasi kalimat, bukan semua kata diawali huruf besar.
 
 Gunakan kata kerja yang menjelaskan hasil.
 
-| Tujuan | Teks tombol |
-|---|---|
+| Tujuan               | Teks tombol          |
+| -------------------- | -------------------- |
 | Pesan lewat WhatsApp | Pesan lewat WhatsApp |
-| Melihat katalog | Lihat produk |
-| Melihat paket | Lihat pilihan paket |
-| Membaca detail | Lihat detail |
-| Mengirim formulir | Kirim permintaan |
-| Melihat lokasi | Lihat lokasi |
-| Membaca artikel | Baca selengkapnya |
-| Menghubungi admin | Hubungi Lely Cake |
-| Kembali | Kembali ke produk |
+| Melihat katalog      | Lihat produk         |
+| Melihat paket        | Lihat pilihan paket  |
+| Membaca detail       | Lihat detail         |
+| Mengirim formulir    | Kirim permintaan     |
+| Melihat lokasi       | Lihat lokasi         |
+| Membaca artikel      | Baca selengkapnya    |
+| Menghubungi admin    | Hubungi Lely Cake    |
+| Kembali              | Kembali ke produk    |
 
 Hindari:
 
@@ -506,9 +506,11 @@ Jika memakai tangkapan layar WhatsApp, samarkan nomor dan informasi pribadi.
 Jawaban harus langsung muncul pada kalimat pertama.
 
 **Pertanyaan:**
+
 > Apakah Lely Cake menerima pesanan mendadak?
 
 **Jawaban:**
+
 > Pesanan mendadak dapat diterima sesuai ketersediaan produk dan jadwal produksi. Untuk hasil terbaik, lakukan pemesanan setidaknya satu hingga dua hari sebelumnya.
 
 Hindari jawaban yang dimulai dengan pembuka panjang.

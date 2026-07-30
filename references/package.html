@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paket Pilihan Acara - Lely Cake</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Cormorant+Garamond:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#2d1504",
+                    "outline-variant": "#d4c3ba",
+                    "secondary-container": "#fccd78",
+                    "background": "#fff8f5",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#bf957a",
+                    "surface-tint": "#7a5740",
+                    "secondary-fixed-dim": "#edc06b",
+                    "on-tertiary-fixed-variant": "#484740",
+                    "surface-white": "#FFFDF9",
+                    "surface": "#fff8f5",
+                    "on-surface-variant": "#50443e",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#fbf2ee",
+                    "on-background": "#1f1b19",
+                    "text-primary": "#2A1A10",
+                    "on-surface": "#1f1b19",
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-container": "#775607",
+                    "success": "#4F6B4F",
+                    "surface-dim": "#e1d8d5",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#a09d96",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "error": "#9A3F32",
+                    "on-primary-fixed-variant": "#5f402a",
+                    "surface-container": "#f5ece8",
+                    "secondary-fixed": "#ffdea7",
+                    "primary-container": "#4b2e1a",
+                    "surface-container-high": "#efe6e3",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#ebbda1",
+                    "inverse-primary": "#ebbda1",
+                    "tertiary-fixed": "#e6e2d9",
+                    "tertiary-container": "#36352f",
+                    "surface-variant": "#e9e1dd",
+                    "on-secondary-fixed": "#271900",
+                    "secondary": "#7b580b",
+                    "tertiary-fixed-dim": "#c9c6be",
+                    "on-tertiary-fixed": "#1c1c16",
+                    "surface-container-highest": "#e9e1dd",
+                    "tertiary": "#21201b",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f8efeb",
+                    "outline": "#82746d",
+                    "inverse-surface": "#342f2d",
+                    "text-secondary": "#6F625A",
+                    "border-soft": "#E5D9C8",
+                    "primary-fixed": "#ffdcc7",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#321907"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "8px",
+                    "lg": "48px",
+                    "xxl": "120px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "base": "4px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "sm": "16px"
+            },
+            "fontFamily": {
+                    "headline-h2": ["Cormorant Garamond", "serif"],
+                    "body-intro": ["Plus Jakarta Sans", "sans-serif"],
+                    "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+                    "body-main": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-h1-mobile": ["Cormorant Garamond", "serif"],
+                    "headline-h2-mobile": ["Cormorant Garamond", "serif"],
+                    "button-text": ["Plus Jakarta Sans", "sans-serif"],
+                    "headline-h3": ["Cormorant Garamond", "serif"],
+                    "headline-h1": ["Cormorant Garamond", "serif"],
+                    "body-main-mobile": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-h2": ["48px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-intro": ["20px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-main": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-h1-mobile": ["44px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-h2-mobile": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "button-text": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                    "headline-h3": ["32px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-h1": ["64px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-main-mobile": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #FFFDF9;
+            color: #2A1A10;
+        }
+        .glass-card {
+            background: rgba(255, 253, 249, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 217, 200, 0.5);
+        }
+    </style>
+</head>
+<body class="font-body-main selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 bg-surface-white dark:bg-surface-container shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="font-headline-h3 text-headline-h3 font-bold text-primary dark:text-primary-fixed">Lely Cake</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Beranda</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Produk</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-button-text text-button-text" href="#">Paket</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Tentang Kami</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Testimoni</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Kontak</a>
+</nav>
+<button class="bg-primary-container text-on-primary rounded-lg px-md py-xs font-button-text text-button-text hover:opacity-80 transition-opacity active:scale-95 duration-200">
+                Pesan Sekarang
+            </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative py-xxl overflow-hidden">
+<div class="absolute inset-0 bg-surface-container opacity-30"></div>
+<div class="max-w-container-max mx-auto px-lg relative z-10 flex flex-col items-center text-center">
+<span class="font-label-caps text-label-caps text-secondary mb-sm uppercase tracking-widest">Katalog Layanan</span>
+<h1 class="font-headline-h1 text-headline-h1 text-primary max-w-3xl mb-md">Paket Pilihan Acara</h1>
+<p class="font-body-intro text-body-intro text-text-secondary max-w-2xl">
+                Kami mengurasi paket terbaik untuk memudahkan Anda menyiapkan hidangan yang tepat bagi tamu tercinta. Setiap paket dirangkai dengan kehangatan rasa dan kualitas artisanal.
+            </p>
+</div>
+<!-- Decorative Circle -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-96 h-96 rounded-full bg-secondary-container blur-3xl opacity-20"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-96 h-96 rounded-full bg-primary-container blur-3xl opacity-10"></div>
+</section>
+<!-- Packages Section (Bento Grid Style for some cards) -->
+<section class="py-xl bg-surface-white">
+<div class="max-w-container-max mx-auto px-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Paket Rapat -->
+<div class="group flex flex-col bg-surface-white rounded-xl shadow-[0_10px_30px_rgba(75,46,26,0.08)] border border-border-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
+<div class="relative aspect-video">
+<img class="object-cover w-full h-full" data-alt="A professional business meeting set in a bright modern office with a premium selection of artisanal cakes and pastries served on a clean white ceramic platter. The lighting is bright and natural, highlighting the textures of the snacks. The atmosphere is corporate yet warm, with subtle brown and cream tones consistent with Lely Cake branding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ZKPPaUXb2P5_FbFCLZuQ1MwcylqL7hTfBObbmXu0EhwvAe5HFK1en0920Z-9sEqV59SXhJkU26GNnDDauF0UUBPPPvppS6aYrHzSsx2AjuEyAaOub_umIYuNgdsk9MkOUp2MPy6zQs9DfoIkTyLJsXJ2BwbQ_jIfesd6AoJzEqIzS1OPR776ZPW62KSQs6pEfpaEOmO4rcNxSPz5ooY7y-3ER77JgnaFcrhoM2pnJESZcYrSgXq1byANxf-C4mZ7ThgF_tv1cOU"/>
+<div class="absolute top-sm right-sm bg-primary-container text-on-primary px-sm py-1 rounded-full text-xs font-bold uppercase tracking-wider">Populer</div>
+</div>
+<div class="p-md flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-h3 text-headline-h3 text-primary">Paket Rapat</h3>
+<span class="text-secondary font-bold">Mulai Rp 250k</span>
+</div>
+<p class="font-body-main text-body-main text-text-secondary italic mb-sm">"Efisiensi dalam kelezatan rasa."</p>
+<div class="flex items-center gap-xs text-secondary mb-md">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span class="font-label-caps text-[12px]">Cocok untuk: Meeting Kantor &amp; Seminar Kecil</span>
+</div>
+<ul class="space-y-xs mb-lg flex-grow">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                5 Jenis Jajanan Pasar Premium
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Minuman Segar / Kopi &amp; Teh
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Box Exclusive &amp; Tissue
+                            </li>
+</ul>
+<div class="border-t border-border-soft pt-md mt-auto">
+<div class="flex justify-between items-center mb-md">
+<span class="text-xs text-text-secondary">Min. Order: 10 Paket</span>
+<span class="text-xs text-text-secondary">Kapasitas: 10-15 Orang</span>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<button class="bg-primary text-on-primary py-sm rounded-lg font-button-text text-sm hover:brightness-110 transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    WhatsApp
+                                </button>
+<button class="border border-primary text-primary py-sm rounded-lg font-button-text text-sm hover:bg-surface-container transition-all">
+                                    Lihat Detail
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Paket Arisan -->
+<div class="group flex flex-col bg-surface-white rounded-xl shadow-[0_10px_30px_rgba(75,46,26,0.08)] border border-border-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
+<div class="relative aspect-video">
+<img class="object-cover w-full h-full" data-alt="A warm, inviting living room setting for an arisan social gathering. A beautiful tiered cake stand features colorful traditional Indonesian cakes and modern tarts. Soft afternoon sunlight filters through windows, illuminating the elegant table setup with floral arrangements. The aesthetic is artisanal, cozy, and high-end." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-iJNYFPZeUSqjmgliiz-_fRsq52P7DTvtFQa0G2u487jFGeEcMpxxi6v7OWgEnaNQ1SvtPjPsmhu3s_M9AyAgke24vEMwmYuIeXufPa9MgW5SiOp6WJYh_WU0tPH02NUczuqsFl0_1R7XrUUwCvW1TxvVFLpZQSKZv-n1MJpeyw4B-PbebbboX0qZhRDHGDdS20gAxNgMZeqhrJ6rYhs_3Q58ZTvdbv4XuGwFf9apsuMbj8h0L-lAbhAY-xFMKwzi3-Xl4AEAaVg"/>
+</div>
+<div class="p-md flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-h3 text-headline-h3 text-primary">Paket Arisan</h3>
+<span class="text-secondary font-bold">Mulai Rp 450k</span>
+</div>
+<p class="font-body-main text-body-main text-text-secondary italic mb-sm">"Hangatnya silaturahmi dengan sajian istimewa."</p>
+<div class="flex items-center gap-xs text-secondary mb-md">
+<span class="material-symbols-outlined text-[18px]">diversity_1</span>
+<span class="font-label-caps text-[12px]">Cocok untuk: Arisan Keluarga &amp; Reuni</span>
+</div>
+<ul class="space-y-xs mb-lg flex-grow">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                1 Kue Tampah Spesial (Medium)
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                20 Porsi Jajanan Manis &amp; Gurih
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Setup Display (Opsional)
+                            </li>
+</ul>
+<div class="border-t border-border-soft pt-md mt-auto">
+<div class="flex justify-between items-center mb-md">
+<span class="text-xs text-text-secondary">Min. Order: 1 Paket</span>
+<span class="text-xs text-text-secondary">Kapasitas: 20 Orang</span>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<button class="bg-primary text-on-primary py-sm rounded-lg font-button-text text-sm hover:brightness-110 transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    WhatsApp
+                                </button>
+<button class="border border-primary text-primary py-sm rounded-lg font-button-text text-sm hover:bg-surface-container transition-all">
+                                    Lihat Detail
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Paket Keluarga -->
+<div class="group flex flex-col bg-surface-white rounded-xl shadow-[0_10px_30px_rgba(75,46,26,0.08)] border border-border-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
+<div class="relative aspect-video">
+<img class="object-cover w-full h-full" data-alt="A festive Indonesian family dinner table set with a variety of traditional cakes, pastries, and a large central cake. The lighting is warm and candlelit, creating a sense of intimate celebration. The color palette is rich with browns, golds, and deep creams, showcasing a high-end homemade feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFwcXESU88lCM69b-L6eevQhdJiB5ysEnB4j7M81nnfkZ3OvdXAUz_P1WuxYbY9-uZNi_ujUxmr1PC87TuXWyKPGScXlIsE4uWOik4fF6QAzXjdCJ-cBYh7ZKyx0mbipRfU9ngGZ7N1WezcdW6R1Mksno8C8JQON_3v4qtoB7vJHRpGtuzIccxEe57wom7kYZKUISUOPoHgphVs79X6aNLJEOtUrqnPTnqQf2Ybf_33dZasLdW7YiPnFRQmJ0FdGNfbnzePXypvSc"/>
+</div>
+<div class="p-md flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-h3 text-headline-h3 text-primary">Paket Keluarga</h3>
+<span class="text-secondary font-bold">Mulai Rp 350k</span>
+</div>
+<p class="font-body-main text-body-main text-text-secondary italic mb-sm">"Manisnya momen bersama yang tersayang."</p>
+<div class="flex items-center gap-xs text-secondary mb-md">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span class="font-label-caps text-[12px]">Cocok untuk: Makan Malam &amp; Weekend</span>
+</div>
+<ul class="space-y-xs mb-lg flex-grow">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Assorted Pastry Box (Large)
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                2 Whole Cakes (Best Seller)
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Kartu Ucapan Custom
+                            </li>
+</ul>
+<div class="border-t border-border-soft pt-md mt-auto">
+<div class="flex justify-between items-center mb-md">
+<span class="text-xs text-text-secondary">Min. Order: 1 Paket</span>
+<span class="text-xs text-text-secondary">Kapasitas: 5-8 Orang</span>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<button class="bg-primary text-on-primary py-sm rounded-lg font-button-text text-sm hover:brightness-110 transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    WhatsApp
+                                </button>
+<button class="border border-primary text-primary py-sm rounded-lg font-button-text text-sm hover:bg-surface-container transition-all">
+                                    Lihat Detail
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Paket Pengajian -->
+<div class="group flex flex-col bg-surface-white rounded-xl shadow-[0_10px_30px_rgba(75,46,26,0.08)] border border-border-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
+<div class="relative aspect-video">
+<img class="object-cover w-full h-full" data-alt="A serene religious gathering scene with elegant prayer mats in the background. In the foreground, neatly organized white snack boxes with Lely Cake branding are arranged on a wooden table. The lighting is soft and spiritual, with high-end minimal presentation. Warm cream and brown tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcvPD6zLKNgxwE-VBya2kwGGI2MOAKkdRyNtioy8wKcx3FmhKChHL4UNUSeHqxdxVcBYHxc_MJgZfp6-qXYVuPVEcPFr-xtAZQPU8KXpbv5WTIXju8FxKimYQlvgWWXOrQm3PlV71m5FgU0eua0x0Zq6LVB9eEbxtAcSZvXtAtOUBVRhZP-7dq_NvKrxoTFQzwRE65T-58A7Ov2dsJFm7KoxN9yWcQAcxyy1yb11vv34XDUmVV9vic71T63ivBHszrMFS9cs-iSn8"/>
+</div>
+<div class="p-md flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-h3 text-headline-h3 text-primary">Paket Pengajian</h3>
+<span class="text-secondary font-bold">Mulai Rp 15k/box</span>
+</div>
+<p class="font-body-main text-body-main text-text-secondary italic mb-sm">"Sajian khidmat untuk keberkahan acara."</p>
+<div class="flex items-center gap-xs text-secondary mb-md">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+<span class="font-label-caps text-[12px]">Cocok untuk: Pengajian &amp; Tasyakuran</span>
+</div>
+<ul class="space-y-xs mb-lg flex-grow">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                3 Snack Premium dalam Box
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Air Mineral Kemasan Gelas
+                            </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                Label Stiker Nama Acara
+                            </li>
+</ul>
+<div class="border-t border-border-soft pt-md mt-auto">
+<div class="flex justify-between items-center mb-md">
+<span class="text-xs text-text-secondary">Min. Order: 30 Box</span>
+<span class="text-xs text-text-secondary">Per Box Personal</span>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<button class="bg-primary text-on-primary py-sm rounded-lg font-button-text text-sm hover:brightness-110 transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    WhatsApp
+                                </button>
+<button class="border border-primary text-primary py-sm rounded-lg font-button-text text-sm hover:bg-surface-container transition-all">
+                                    Lihat Detail
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Paket Ulang Tahun -->
+<div class="group lg:col-span-2 flex flex-col md:flex-row bg-surface-white rounded-xl shadow-[0_10px_30px_rgba(75,46,26,0.08)] border border-border-soft overflow-hidden transition-all duration-300 hover:-translate-y-2">
+<div class="relative w-full md:w-2/5 h-64 md:h-auto">
+<img class="object-cover w-full h-full" data-alt="A grand birthday celebration centerpiece featuring a multi-tiered custom cake decorated with elegant gold leaf and delicate sugar flowers. Surrounding the cake are matching cupcakes and macarons. The lighting is bright and festive, with a luxurious white and gold aesthetic. Modern minimalist party decorations are visible in the soft-focus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt2nQJwMR5KjQNLqB7ARqtIYG4RBT-rt9oplRXK2FkKo4XCntcLqhRB4jIQdIJoV0h-YxpEsWkhDTwy4mkm3NWbFWf3Gg5aPjQZHscoYdHpTaYEi7z8aG_fvEbGutacRMMa12lycubty7Kl61iMhe5EBjRSEGRWV8dCzhaj5fzP-1t4OIdYelFbg9uxZZVE-7d0zGd8nM_zv12CYKjC_SJ4qkhyvnOohgLNN96qd5-JgOAHNtQ_ummPnnc6JiJs9zKkcFOxphCb6Q"/>
+<div class="absolute top-sm left-sm bg-secondary text-on-secondary px-sm py-1 rounded-full text-xs font-bold uppercase tracking-wider">Premium Choice</div>
+</div>
+<div class="p-md md:p-lg flex-grow flex flex-col w-full md:w-3/5">
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-h3 text-headline-h3 text-primary">Paket Ulang Tahun</h3>
+<span class="text-secondary font-bold text-lg">Hubungi Kami</span>
+</div>
+<p class="font-body-main text-body-main text-text-secondary italic mb-md">"Rayakan usia baru dengan kemegahan rasa."</p>
+<div class="flex items-center gap-xs text-secondary mb-md">
+<span class="material-symbols-outlined text-[18px]">cake</span>
+<span class="font-label-caps text-[12px]">Cocok untuk: Birthday &amp; Anniversary</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-lg">
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                    Custom Tiered Cake
+                                </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                    12-24 Designer Cupcakes
+                                </li>
+</ul>
+<ul class="space-y-xs">
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                    Dessert Table Styling
+                                </li>
+<li class="flex items-center gap-xs text-text-secondary text-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+                                    Lilin &amp; Pisau Kue Exclusive
+                                </li>
+</ul>
+</div>
+<div class="border-t border-border-soft pt-md mt-auto">
+<div class="flex justify-between items-center mb-md">
+<span class="text-xs text-text-secondary">Min. Order: 14 Hari Sebelumnya</span>
+<span class="text-xs text-text-secondary">Customized Capacity</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+<button class="bg-primary text-on-primary py-md rounded-lg font-button-text text-sm hover:brightness-110 transition-all flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                                    Konsultasi via WhatsApp
+                                </button>
+<button class="border border-primary text-primary py-md rounded-lg font-button-text text-sm hover:bg-surface-container transition-all">
+                                    Lihat Portfolio
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-xxl bg-primary-container text-on-primary relative overflow-hidden">
+<!-- Abstract Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-white/20 to-transparent"></div>
+</div>
+<div class="max-w-container-max mx-auto px-lg relative z-10 text-center">
+<h2 class="font-headline-h2 text-headline-h2 mb-md">Sedang menyiapkan acara?</h2>
+<p class="font-body-intro text-body-intro mb-lg max-w-2xl mx-auto opacity-90">
+                Ceritakan kebutuhan Anda, kami bantu pilihkan yang sesuai dengan selera tamu dan anggaran Anda. Layanan personal adalah prioritas kami.
+            </p>
+<button class="bg-secondary-container text-on-secondary-container px-xl py-md rounded-full font-button-text text-lg hover:scale-105 transition-transform shadow-lg">
+                Hubungi Lely Cake
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-highest text-on-primary dark:text-on-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-lg py-xxl max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-h2 text-headline-h2 text-on-primary dark:text-on-surface mb-md">Lely Cake</div>
+<p class="font-body-main text-body-main text-on-primary/80 mb-md">Handmade with heart, menyajikan kebahagiaan dalam setiap gigitan sejak 2014.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-fixed mb-md">Navigasi</h4>
+<ul class="flex flex-col gap-sm">
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed transition-colors font-body-main text-sm" href="#">Beranda</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed transition-colors font-body-main text-sm" href="#">Produk</a></li>
+<li><a class="text-secondary-fixed font-bold font-body-main text-sm" href="#">Paket</a></li>
+<li><a class="text-on-primary/80 dark:text-on-surface/80 hover:text-secondary-fixed transition-colors font-body-main text-sm" href="#">Tentang Kami</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-fixed mb-md">Kontak</h4>
+<ul class="flex flex-col gap-sm">
+<li class="text-on-primary/80 dark:text-on-surface/80 font-body-main text-sm">WhatsApp: 0812-1609-1918</li>
+<li class="text-on-primary/80 dark:text-on-surface/80 font-body-main text-sm">Email: hello@lelycake.com</li>
+<li class="text-on-primary/80 dark:text-on-surface/80 font-body-main text-sm">Instagram: @lelycake_sub</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-fixed mb-md">Lokasi Kami</h4>
+<p class="text-on-primary/80 dark:text-on-surface/80 font-body-main text-sm">
+                    Surabaya, Sidoarjo, Gresik, Mojokerto
+                </p>
+<div class="mt-md h-24 w-full rounded-lg bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px] opacity-40">location_on</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-lg py-md border-t border-white/10 text-center text-xs opacity-60">
+            © 2024 Lely Cake. Handmade with Heart.
+        </div>
+</footer>
+<!-- BottomNavBar / WhatsApp FAB -->
+<div class="fixed bottom-md right-md z-50">
+<a class="flex items-center gap-xs bg-success text-on-primary rounded-full px-sm py-xs shadow-lg hover:brightness-110 transition-all hover:scale-110" href="https://wa.me/081216091918" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-button-text text-button-text">WhatsApp</span>
+</a>
+</div>
+<script>
+        // Optional smooth scroll or hover effects
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body></html>

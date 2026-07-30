@@ -1,0 +1,8 @@
+.next/
+.agents/
+build/
+coverage/
+design-references/
+node_modules/
+out/
+references/

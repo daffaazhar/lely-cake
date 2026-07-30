@@ -6,7 +6,12 @@ type BadgeProps = {
 };
 
 export function Badge({ children, tone = "default" }: BadgeProps) {
-  const toneClassName = tone === "success" ? "border-[var(--color-success)] text-[var(--color-success)]" : "border-[var(--color-border-soft)] text-[var(--color-text-secondary)]";
+  const toneClassName =
+    tone === "success"
+      ? "border-(--color-success) text-(--color-success)"
+      : "border-(--color-border-soft) text-(--color-text-secondary)";
 
-  return <span className={`inline-flex rounded-full border px-3 py-1 text-sm font-bold ${toneClassName}`}>{children}</span>;
+  return (
+    <span className={`inline-flex rounded-full border px-3 py-1 text-sm font-bold ${toneClassName}`}>{children}</span>
+  );
 }

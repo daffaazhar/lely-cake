@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onde-Onde Wijen Premium | Lely Cake</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom smooth transition for gallery */
+        .gallery-main { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-4px); }
+    </style>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#1f1b19",
+                    "text-primary": "#2A1A10",
+                    "primary-fixed-dim": "#ebbda1",
+                    "on-primary-fixed-variant": "#5f402a",
+                    "surface-container-highest": "#e9e1dd",
+                    "background": "#fff8f5",
+                    "tertiary-fixed-dim": "#c9c6be",
+                    "error": "#9A3F32",
+                    "primary": "#321907",
+                    "inverse-surface": "#342f2d",
+                    "on-primary-container": "#bf957a",
+                    "success": "#4F6B4F",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#36352f",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdea7",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#edc06b",
+                    "on-surface": "#1f1b19",
+                    "tertiary-fixed": "#e6e2d9",
+                    "surface-container-high": "#efe6e3",
+                    "surface-bright": "#fff8f5",
+                    "border-soft": "#E5D9C8",
+                    "surface-variant": "#e9e1dd",
+                    "on-tertiary-fixed": "#1c1c16",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fccd78",
+                    "on-secondary-container": "#775607",
+                    "surface-container": "#f5ece8",
+                    "on-secondary-fixed": "#271900",
+                    "surface-container-low": "#fbf2ee",
+                    "primary-container": "#4b2e1a",
+                    "inverse-on-surface": "#f8efeb",
+                    "text-secondary": "#6F625A",
+                    "surface-dim": "#e1d8d5",
+                    "surface": "#fff8f5",
+                    "primary-fixed": "#ffdcc7",
+                    "surface-white": "#FFFDF9",
+                    "secondary": "#7b580b",
+                    "tertiary": "#21201b",
+                    "on-tertiary-container": "#a09d96",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#50443e",
+                    "on-error": "#ffffff",
+                    "outline": "#82746d",
+                    "surface-tint": "#7a5740",
+                    "on-tertiary-fixed-variant": "#484740",
+                    "outline-variant": "#d4c3ba",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#ebbda1",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "on-primary-fixed": "#2d1504"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "xl": "80px",
+                    "sm": "16px",
+                    "xxl": "120px",
+                    "container-max": "1200px",
+                    "md": "24px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "body-intro": ["Plus Jakarta Sans"],
+                    "headline-h1": ["Playfair Display"],
+                    "headline-h3": ["Playfair Display"],
+                    "headline-h1-mobile": ["Playfair Display"],
+                    "headline-h2": ["Playfair Display"],
+                    "body-main-mobile": ["Plus Jakarta Sans"],
+                    "headline-h2-mobile": ["Playfair Display"],
+                    "body-main": ["Plus Jakarta Sans"],
+                    "button-text": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-intro": ["20px", {"lineHeight": "1.75", "fontWeight": "400"}],
+                    "headline-h1": ["64px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-h3": ["32px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-h1-mobile": ["44px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-h2": ["48px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-main-mobile": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-h2-mobile": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-main": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button-text": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface-white text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<header class="bg-surface-white sticky top-0 z-50 shadow-sm border-b border-surface-container">
+<nav class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="font-headline-h3 text-headline-h3 font-bold text-primary">Lely Cake</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-button-text text-button-text" href="#">Beranda</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Produk</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Paket</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Tentang Kami</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Testimoni</a>
+<a class="text-text-secondary hover:text-primary transition-colors duration-200 font-button-text text-button-text" href="#">Kontak</a>
+</div>
+<button class="bg-primary text-on-primary px-sm py-xs rounded-lg font-button-text text-button-text hover:opacity-80 transition-opacity active:scale-95 duration-200">
+                Pesan Sekarang
+            </button>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-lg py-xl">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-xs mb-lg text-text-secondary font-label-caps text-label-caps">
+<a class="hover:text-primary" href="#">BERANDA</a>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<a class="hover:text-primary" href="#">PRODUK</a>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary">ONDE-ONDE WIJEN PREMIUM</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Gallery Section (Bento Grid Style) -->
+<div class="lg:col-span-7 space-y-md">
+<div class="relative group aspect-[4/3] rounded-xl overflow-hidden shadow-soft overflow-hidden">
+<img class="w-full h-full object-cover gallery-main transition-all duration-500 transform hover:scale-105" data-alt="A professional, high-end food photography shot of golden-brown onde-onde wijen, perfectly spherical and densely covered in toasted sesame seeds. The snack is presented on a minimalist white ceramic plate in a warm, bright kitchen setting. Soft morning sunlight highlights the crisp texture of the sesame seeds and the slightly glistening surface. The background is a soft-focus wooden table, conveying a warm, artisanal, handmade-with-heart atmosphere." id="main-gallery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfAyEfPSohG_dQl-q41cYAil-1WE9o0W7EmQq3-p_XwV7BVdkyfP9GGp2_yVXEQmzoudYKu4GbDnLFBCsReNtHNeBFsb86koaRJqhjkK7E9RstOoqyHN5t8aMWukqZir3DWACt7K2278MtWM23nKFc9QS-GQC5kljmjvu_87GcqEcZhI2-WOlrU7H-E6VOfho9_089v1VzVI0HX7NpERBbT9f2aH8h-43uXF08_PhUNh8tgusQWKuAxu2aznoUkrvgS1LPtp4qUiU"/>
+<div class="absolute top-md left-md bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-caps text-label-caps flex items-center gap-xs shadow-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                        Terlaris
+                    </div>
+</div>
+<div class="grid grid-cols-4 gap-md">
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-primary shadow-sm hover:opacity-80 transition-all" onclick="changeImage(this, 0)">
+<img class="w-full h-full object-cover" data-alt="Close-up detailed view of the golden-brown crust of an Indonesian Onde-Onde ball, showing the intricate texture of numerous white sesame seeds perfectly embedded in the fried dough. The lighting is warm and golden, emphasizing the delicious, crunchy surface and the handmade quality of the traditional snack. Corporate minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhjevwHuxtSen2Oab6Bsdu_5VcPgMAew5kNUX9EYrHmeeqIN2viLSqGQ4R0pFA1o2v3JJgKS8woym05R85q0Xiza7N8eRTL_eqAcjFde0zyz1qU00ATDwXrA6NqOJzHfTqK2SCACU3A7EOjmPrMgwJ4J4E1PLxzDmk-f_i5YBJngXM7gSOf2LcQ3y2-GUm2R4agzYVKA2DfiR7yAG9dUKuab5M5flld9O7vwiKpir55ak7B5e6Bty8AR4l66SICx7Zu6JhdHqdl1I"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-border-soft hover:border-primary transition-all" onclick="changeImage(this, 1)">
+<img class="w-full h-full object-cover" data-alt="A split-open Onde-Onde showing the soft, steaming, bright yellow-green mung bean filling inside the chewy glutinous rice flour crust. The contrast between the crunchy sesame seed exterior and the smooth, creamy interior is visible. Professional studio food photography for a premium Indonesian bakery, light and airy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6ScW_BGCoyrT4MAHtaaf6HYckvaK2m94n7h8W17ubBJcsmvusCRqijs2uIvblUr2H8qyVZII_eC6BhZ0W-fbvjTZe2-TVwdCDq9Vo2TfSkm-GXrT2q7HYk-37QvNCeeibueis8iU7q6ALfNr1oKPaJQMw-uBKLk9IJp-WOvKZqhgYCPgHRnX5Rx6psLIaWRvlZqNjj4vsTCsY4_t-xRu6XEPtre2aQ-Q5l4D0xFYP_BgxcnViG56eGKPdOAA9H99uXMfh4lrXDoE"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-border-soft hover:border-primary transition-all" onclick="changeImage(this, 2)">
+<img class="w-full h-full object-cover" data-alt="A group of ten Onde-Onde balls neatly arranged in a premium, elegant craft paper box with the Lely Cake branding. The packaging looks professional yet artisanal. The scene is shot from a top-down perspective on a clean, bright surface, emphasizing the order quantity and gift-ready presentation for a premium corporate catering service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPHyeSkVQmRE4qbDXzKp21uLRFup0mj7bnFHkf48NPI_x_3yN3t3fa78Nx9qKzvXeIwRD-n6fqANdJ4o8CZkr96fKdS3RqkIPe0LJ-S5fMeCPaGtpbEY9EKeFowU3gWqVO7d2c1veyFAq9HPC5DUSDXuzRtgvo6olFZThkXts5wlCJ9aQ0tFfinVHte6viVPbq32ZZ_IzCxPp6jjeloA4CfF6nz53bE4hmd5v4J3JEUn2-stlO46gRNsCnz42Gh9rCSY47Cfh3VoE"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-border-soft hover:border-primary transition-all" onclick="changeImage(this, 3)">
+<img class="w-full h-full object-cover" data-alt="Atmospheric lifestyle shot of Onde-Onde served alongside a cup of warm tea on a traditional Indonesian batik runner. The mood is calm, elegant, and inviting, showcasing the product as a sophisticated afternoon snack. Soft bokeh background of a modern home interior with warm earth tones and premium textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-D7vCNaiQ7rTabY_w_eFOJbMQaw-HRX3uYnCfTsdpTXBdfjtCrW7mjFMOrO9SPuFnNhPrjhEpiqtZbxDRtFMo4johi69RaurTsCoMCMWuzgwIhkQ1q8gQ90JTTCOGW3k9xQJa_m0eTeySl4-_RtAq-tKcnILtcHLT_3-bUUlBXyCsRU5DHO-mm4eL_mE8zQXmXeWT9ERxxwaaZmH6uM2s1spzVO9ESGsAmURULzmb-xL38BbhMiCgloWeTa_4Y1RxyDo59dMIUsk"/>
+</button>
+</div>
+</div>
+<!-- Product Info Section -->
+<div class="lg:col-span-5 flex flex-col">
+<h1 class="font-cormorant text-headline-h2 text-primary mb-xs">Onde-Onde Wijen Premium</h1>
+<div class="flex items-center gap-sm mb-md">
+<span class="font-headline-h3 text-headline-h3 text-secondary italic">Rp 25.000</span>
+<span class="text-text-secondary font-body-main">/ box (isi 10 pcs)</span>
+</div>
+<div class="h-px bg-border-soft w-full mb-md"></div>
+<p class="font-body-main text-body-main text-text-primary leading-relaxed mb-lg">
+                    Onde-Onde klasik dengan isian kacang hijau yang lembut dan manisnya pas. Kulitnya kenyal dengan taburan wijen yang melimpah dan digoreng hingga keemasan. Dibuat segar setiap hari tanpa bahan pengawet untuk menjamin kualitas rasa rumahan yang premium.
+                </p>
+<!-- Detailed Specs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-lg">
+<div class="p-sm bg-surface-container-low rounded-xl border border-surface-container">
+<div class="flex items-center gap-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">shopping_basket</span>
+<span class="font-button-text text-button-text">Minimal Pesan</span>
+</div>
+<p class="text-text-secondary font-label-caps text-label-caps ml-[28px]">1 Box</p>
+</div>
+<div class="p-sm bg-surface-container-low rounded-xl border border-surface-container">
+<div class="flex items-center gap-xs text-primary mb-1">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span class="font-button-text text-button-text">Daya Tahan</span>
+</div>
+<p class="text-text-secondary font-label-caps text-label-caps ml-[28px]">24 Jam (Ruang)</p>
+</div>
+</div>
+<!-- Accordion for serving tips -->
+<div class="mb-xl">
+<button class="w-full flex justify-between items-center py-sm border-y border-border-soft group" onclick="toggleAccordion('serving-tips')">
+<span class="font-button-text text-button-text text-primary flex items-center gap-xs">
+<span class="material-symbols-outlined">restaurant</span>
+                            Saran Penyajian
+                        </span>
+<span class="material-symbols-outlined transition-transform duration-300" id="accordion-icon">expand_more</span>
+</button>
+<div class="hidden overflow-hidden py-md" id="serving-tips">
+<p class="text-text-secondary font-body-main text-[16px]">
+                            Hangatkan kembali di microwave atau oven selama 1-2 menit untuk mendapatkan tekstur kulit yang kembali renyah dan isian kacang hijau yang lumer. Nikmati selagi hangat bersama teh atau kopi favorit Anda.
+                        </p>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="mt-auto space-y-md">
+<a class="w-full bg-primary text-on-primary flex items-center justify-center gap-sm py-md rounded-xl font-button-text text-button-text hover:brightness-110 active:scale-[0.98] transition-all shadow-md" href="https://wa.me/6281216091918" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                        Pesan lewat WhatsApp
+                    </a>
+<p class="text-center text-text-secondary font-label-caps text-[12px]">Tanya stok atau pesan untuk acara khusus</p>
+</div>
+</div>
+</div>
+<!-- Related Products -->
+<section class="mt-xxl">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-cormorant text-headline-h2 text-primary">Pilihan Favorit Lainnya</h2>
+<p class="text-text-secondary font-body-main">Lengkapi momen spesial Anda dengan paket camilan pilihan</p>
+</div>
+<a class="text-primary font-button-text text-button-text flex items-center gap-xs hover:underline" href="#">
+                    Lihat Semua Produk
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Related 1 -->
+<div class="bg-surface-white rounded-xl shadow-soft border border-surface-container overflow-hidden hover-lift group">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A premium Snack Box A selection featuring a colorful variety of traditional Indonesian kue basah: pastel, risoles, and lapis legit, neatly arranged on paper doilies inside a clean, white cardboard box with a transparent window. The lighting is bright and professional, suggesting a corporate meeting or event catering service. High-end, minimalist food styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-eQH2mduyfvM_7MM1gLCJyQJCOahfUnJiEwWh8UDjweTP-ba4Nokyfd2xb-je-6svEcHs1FZX0IB1wfUBJYQdvXDUzJ4QQ3_bH3iDHKT-WiDx8XxEtABsEWvA2gIOkdW7YW78Q6vohKC9OMNAWI4XVsHBC2yozPRYrZyiUDvz25IenYMMnvvyh0NJysjTupTF7QyEIufV8NW3Kwqj5xge3lcEqEUBun23HujVE2n0dTXKp_az1ez09p89gL6JTAm30XC-04-v16U"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-h3 text-headline-h3 text-primary mb-xs">Snack Box A</h3>
+<p class="text-text-secondary font-body-main text-[16px] mb-md line-clamp-2">Paket hemat untuk rapat kantor atau hantaran acara keluarga.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-secondary">Rp 15.000 / box</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Related 2 -->
+<div class="bg-surface-white rounded-xl shadow-soft border border-surface-container overflow-hidden hover-lift group">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden-brown, breaded Risoles Smoked Beef pastries served on a rustic wooden platter with fresh green chilies on the side. The filling of creamy mayo, boiled egg, and premium smoked beef is implied by a half-cut risole. The scene is shot in a warm, sophisticated cafe style with soft depth of field and natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKukMIyrdorb7kK-RrW0Z1-leXlrF_89HciXaYtdD8Xpbomr-9A3AWARv1bb7eR4yvVXnYxakV7HKyL7vMLJgS6IGV8HemPMVXOwI4frfFRdtrBukStybWwC0uzh9buBkR-N4JB8UTasd0PWJVjG_twwkI9BLAtybOQL2GThfSrjX3f58TlVJvZsTvYjn2rhAwiVmdNSHuYzyz4N6APxg3_CvsqA7A0ObtrWz7ldO57nly1NTKjzWkSM7vNpKQUfJ351rhioxQag0"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-h3 text-headline-h3 text-primary mb-xs">Risoles Smoked Beef</h3>
+<p class="text-text-secondary font-body-main text-[16px] mb-md line-clamp-2">Isian daging asap melimpah dengan saus mayo yang creamy.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-secondary">Rp 8.500 / pcs</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Related 3 (Decorative / Package) -->
+<div class="bg-primary p-lg rounded-xl flex flex-col justify-center items-center text-center text-on-primary">
+<span class="material-symbols-outlined text-[48px] mb-md" style="font-variation-settings: 'wght' 200;">feature_search</span>
+<h3 class="font-cormorant text-headline-h3 mb-sm">Custom Hampers</h3>
+<p class="font-body-main text-[16px] opacity-80 mb-lg">Buat paket hantaran eksklusif sesuai kebutuhan acara Anda.</p>
+<button class="border border-on-primary px-lg py-sm rounded-lg font-button-text text-button-text hover:bg-on-primary hover:text-primary transition-all">
+                        Hubungi Kami
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary mt-xxl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg px-lg py-xxl max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="font-headline-h2 text-headline-h2 text-on-primary mb-md">Lely Cake</div>
+<p class="font-body-main text-body-main opacity-80 max-w-md">Menghadirkan kehangatan tradisi dalam setiap gigitan. Spesialis kue basah dan snack premium untuk momen spesial Anda.</p>
+</div>
+<div>
+<div class="font-label-caps text-label-caps mb-md tracking-widest text-secondary-fixed">MENU</div>
+<div class="flex flex-col gap-sm">
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-main" href="#">Beranda</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-main" href="#">Produk</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-main" href="#">Paket</a>
+<a class="text-on-primary/80 hover:text-secondary-fixed transition-colors font-body-main" href="#">Tentang Kami</a>
+</div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps mb-md tracking-widest text-secondary-fixed">KONTAK</div>
+<div class="flex flex-col gap-sm">
+<span class="text-on-primary/80 font-body-main">WhatsApp: 0812-1609-1918</span>
+<span class="text-on-primary/80 font-body-main">Lokasi: Surabaya, Sidoarjo, Gresik, Mojokerto</span>
+</div>
+</div>
+</div>
+<div class="border-t border-on-primary/10 py-md px-lg text-center font-label-caps text-[12px] opacity-60">
+            © 2024 Lely Cake. Handmade with Heart.
+        </div>
+</footer>
+<!-- WhatsApp Floating Action Button -->
+<a class="fixed bottom-md right-md z-50 flex items-center gap-xs bg-success text-on-primary rounded-full px-sm py-xs shadow-lg hover:brightness-110 transition-all hover:scale-110 active:scale-110" href="https://wa.me/6281216091918">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-button-text text-button-text">WhatsApp</span>
+</a>
+<script>
+        function changeImage(el, index) {
+            const mainImg = document.getElementById('main-gallery');
+            const thumbs = el.parentElement.querySelectorAll('button');
+            
+            // Update main image source and alt (simulated here for placeholders)
+            mainImg.src = el.querySelector('img').src;
+            mainImg.dataset.alt = el.querySelector('img').dataset.alt;
+            
+            // Update borders
+            thumbs.forEach(t => {
+                t.classList.remove('border-primary');
+                t.classList.add('border-border-soft');
+            });
+            el.classList.add('border-primary');
+            el.classList.remove('border-border-soft');
+        }
+
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('accordion-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body></html>
