@@ -104,7 +104,7 @@ export default function HomePage() {
 
               return (
                 <article className="group text-center" key={value.title}>
-                  <span className="mx-auto flex size-20 items-center justify-center rounded-full bg-[color:rgb(123_88_11_/_0.16)] text-(--color-brand-brown) transition-transform group-hover:scale-110 motion-reduce:transform-none">
+                  <span className="mx-auto flex size-20 items-center justify-center rounded-full bg-[rgb(123_88_11/0.16)] text-(--color-brand-brown) transition-transform group-hover:scale-110 motion-reduce:transform-none">
                     <Icon aria-hidden="true" className="size-8" />
                   </span>
                   <h2 className="mt-6 text-3xl">{value.title}</h2>
@@ -227,9 +227,9 @@ export default function HomePage() {
       ) : null}
 
       <section className="home-section overflow-hidden bg-white" id="tentang">
-        <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-[120px]">
+        <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-30">
           <div className="relative">
-            <div className="about-image-wrap relative z-10 aspect-[4/5] min-h-0">
+            <div className="about-image-wrap relative z-10 aspect-4/5 min-h-0">
               <Image
                 alt="Kue tradisional Lely Cake yang disiapkan untuk pesanan"
                 className="object-cover"
@@ -275,7 +275,7 @@ export default function HomePage() {
       <section className="bg-(--color-brand-brown) py-20 text-white" id="area-layanan">
         <Container className="flex flex-col items-center justify-between gap-8 text-center md:flex-row md:text-left">
           <div>
-            <h2 className="text-3xl !text-white">Area layanan kami</h2>
+            <h2 className="text-3xl text-white!">Area layanan kami</h2>
             <p className="mt-2 text-sm text-white/70">Siap mengantar kehangatan langsung ke depan pintu Anda.</p>
           </div>
           <ul className="flex flex-wrap justify-center gap-4" aria-label="Area layanan Lely Cake">
@@ -297,7 +297,7 @@ export default function HomePage() {
               Ceritakan kebutuhan Anda. Kami akan membantu memilihkan produk dan jumlah yang sesuai agar momen istimewa
               Anda berjalan sempurna.
             </p>
-            <WhatsAppButton className="mt-8 min-w-[240px] rounded-2xl px-[120px] text-xl">
+            <WhatsAppButton className="mt-8 w-full max-w-xs rounded-2xl px-8 text-base sm:w-auto sm:max-w-none sm:min-w-60 sm:px-30 sm:text-xl">
               Hubungi Lely Cake
             </WhatsAppButton>
           </div>

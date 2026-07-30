@@ -52,7 +52,12 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <a className="button button-primary hidden md:inline-flex" href={whatsappUrl} rel="noreferrer" target="_blank">
+        <a
+          className="button button-primary hidden! md:inline-flex!"
+          href={whatsappUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
           Pesan lewat WhatsApp
         </a>
 
