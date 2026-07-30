@@ -1,0 +1,25 @@
+services:
+  lely-cake:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: lely-cake:latest
+    container_name: lely_cake
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+
+    expose:
+      - "3000"
+
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true
+    name: proxy_net
