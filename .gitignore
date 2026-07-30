@@ -17,3 +17,6 @@
 skills-*.json
 *.tsbuildinfo
 .DS_Store
+
+github-actions-lely-cake
+github-actions-lely-cake.pub
