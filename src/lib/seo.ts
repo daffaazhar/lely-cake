@@ -9,15 +9,15 @@ type MetadataInput = {
 };
 
 export function createMetadata({ title, description, path = "/" }: MetadataInput): Metadata {
-  const pageTitle = `${title} | ${siteConfig.name}`;
+  const socialTitle = `${title} | ${siteConfig.name}`;
   const canonical = siteConfig.siteUrl ? new URL(path, siteConfig.siteUrl).toString() : undefined;
 
   return {
-    title: pageTitle,
+    title,
     description,
     alternates: canonical ? { canonical } : undefined,
     openGraph: {
-      title: pageTitle,
+      title: socialTitle,
       description,
       url: canonical,
       siteName: siteConfig.name,
