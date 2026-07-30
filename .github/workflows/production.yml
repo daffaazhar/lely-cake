@@ -3,11 +3,11 @@ name: Lely Cake CI/CD
 on:
   pull_request:
     branches:
-      - main
+      - master
 
   push:
     branches:
-      - main
+      - master
 
   workflow_dispatch:
 
@@ -54,7 +54,7 @@ jobs:
       - ci
 
     if: >
-      github.ref == 'refs/heads/main' &&
+      github.ref == 'refs/heads/master' &&
       github.event_name != 'pull_request'
 
     runs-on: ubuntu-latest
@@ -106,7 +106,7 @@ jobs:
       - publish
 
     if: >
-      github.ref == 'refs/heads/main' &&
+      github.ref == 'refs/heads/master' &&
       github.event_name != 'pull_request'
 
     runs-on: ubuntu-latest
@@ -159,8 +159,8 @@ jobs:
 
           echo "Updating deployment configuration..."
 
-          git fetch origin main
-          git checkout main
+          git fetch origin master
+          git checkout master
           git reset --hard "$IMAGE_TAG"
 
           printf 'IMAGE_TAG=%s\n' "$IMAGE_TAG" > .deploy.env
