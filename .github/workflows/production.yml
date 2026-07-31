@@ -155,7 +155,7 @@ jobs:
             "IMAGE_TAG='$IMAGE_TAG' bash -se" <<'REMOTE'
           set -Eeuo pipefail
 
-          cd /var/www/lely-cake
+          cd /srv/apps/lely-cake
 
           echo "Updating deployment configuration..."
 
