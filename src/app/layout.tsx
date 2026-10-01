@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { siteConfig } from "@/content/site";
 
 import "./globals.css";
+import Script from "next/script";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -38,6 +39,12 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
+        <Script
+          id="xchat-website-chat"
+          src="https://xchat.xposure.id/website-chat.js"
+          data-site-id="2e81d2bf-2a08-405f-9cf5-1546435ab3b0"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
